@@ -1,0 +1,76 @@
+/**
+*Plantiilla generada con jade y sass
+*/
+$font: "Open Sans", sans-serif;
+$color: rgb(168, 10, 10);
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+@import 'menu.scss';
+@import 'banner.scss';
+@import "blog.scss";
+@import 'info.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: $font;   
+}
+header{
+    width: 100%;
+    height: 50px;
+    background: $color;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.contenedor{
+    width: 98%;
+    margin: auto;
+}
+h1{
+    float: left;
+}  
+header .contenedor{
+    display: table;
+}
+
+section{
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#bienvenidos{
+    text-align: center;
+}
+
+footer .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+.copy{
+    font-size: 20px;
+}
+
+.sociales{
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+
+.sociales a{
+    color: $color;
+    text-decoration: none;
+}
+
+@media(min-width:1024px){
+    .contenedor{
+        width: 1000px;
+    }
+}
